@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Interactive Tic Tac Toe Game(A1 Part 3)</title>
+        <link rel="stylesheet" href="css/game.css">
+    </head>
+    <body>
+    <header>
+        <h2>Tic Tac Toe Game</h2>
+        <div id="control">
+           <h4>Player X vs. Player O</h4>
+            <button id="newGame" onclick="clearGameBoard()">
+                New Game
+            </button>
+            <button id="pauseGame" onclick="pauseGame()">
+                Pause Game
+            </button>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div id="gameboard">
+            <table border="0" id="gamegrid">
+                <tr id="r1">
+                    <td id="c1" class="cell"></td>
+                    <td id="c2" class="cell"></td>
+                    <td id="c3" class="cell"></td>
+                </tr>
+                <tr id="r2">
+                    <td id="c4" class="cell"></td>
+                    <td id="c5" class="cell"></td>
+                    <td id="c6" class="cell"></td>
+                </tr>
+                <tr id="r3">
+                    <td id="c7" class="cell"></td>
+                    <td id="c8" class="cell"></td>
+                    <td id="c9" class="cell"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="popsupMsg">
+            <section id="pm">Pops-up Msg here!</section> 
+        </div>
+        <div id="messages">
+            <p></p>
+        </div>
+    </div>
+    <footer>
+        
+    </footer>
+    <script src="script/game.js" type="text/javascript"></script>
+    </body>
+</html>

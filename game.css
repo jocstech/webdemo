@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+
+body {
+    margin:1 auto; 
+}
+
+header {
+    font-family: 'Bungee Inline', cursive;
+    margin: 0 auto;
+    width: 460px;
+    line-height: 1px;
+    text-align: center;
+    border: 1px solid;
+    margin-bottom: 10px;
+    
+}
+
+/*control*/
+#newGame,#pauseGame{
+    height: 30px;
+    width: 150px;
+    color: azure;
+    background: black;
+    border: none;
+}
+#newGame:hover,#pauseGame:hover {
+    background: gray;
+}
+
+
+/*wrapper*/
+
+#gameboard{
+}
+
+/*game board grid*/
+#gamegrid {
+
+    margin: 0 auto;
+    text-align: center;
+    font: 90px "arial";
+    border:none;
+    border-collapse: collapse;
+}
+#gamegrid td {
+border: 2px solid #000;
+}
+
+#gamegrid #r1 td{
+    border-top: none;
+}
+
+#gamegrid #r3 td{
+    border-bottom: none;
+}
+
+#gamegrid td:first-child {
+border-left: none;
+}
+
+#gamegrid td:last-child {
+border-right: none;
+}
+
+
+
+/*cell properties*/
+#gamegrid .cell{
+    width: 150px;
+    height: 150px;
+}
+
+@keyframes gdanimation {
+    from {background-color: #bbb;}
+    to {background-color: #eee;}
+}
+
+@keyframes poanimation {
+    from {background-color: rgba(200,1,1,0.9);}
+    to {background-color: rgba(100,100,100,0.5);}
+}
+
+
+#gamegrid .cell:hover {
+    cursor: pointer;
+    background: #eee;
+    border-radius: 15px;
+    animation-name: gdanimation;
+    animation-duration: 0.5s;
+}
+
+#popsupMsg{
+    animation-name: poanimation;
+    animation-duration: 2s;
+    display: table;
+    margin: 0 auto;
+    z-index: 99;
+    height: 460px;
+    width: 460px;
+    margin-top: -460px;
+    background-color: rgba(100,100,100,0.5);
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    font: 45px "arial";
+    visibility: hidden;
+}
+
+
+/*messages box*/
+#messages {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid;
+    margin-top: 10px;
+    width: 460px;
+}
+
+#pm {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+
+/*footer*/
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
